@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NightMind",
+  "version": "0.1.0",
+  "identifier": "com.aarongrace.nightmind",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "NightMind",
+        "width": 1320,
+        "height": 860,
+        "minWidth": 1040,
+        "minHeight": 700,
+        "center": true,
+        "resizable": true,
+        "decorations": false,
+        "shadow": true,
+        "backgroundColor": "#06050c"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: blob: asset: https://asset.localhost; media-src 'self' blob: data: asset: https://asset.localhost; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src ipc: http://ipc.localhost https://fonts.googleapis.com https://fonts.gstatic.com"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Lifestyle",
+    "shortDescription": "Voice dump at night. Morning brief at dawn.",
+    "longDescription": "NightMind is a quiet desktop journal. Speak everything at 3am in one long take. Wake up to a clean morning brief — the thread, the decisions, the few things worth doing, and the rest you can let go.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
