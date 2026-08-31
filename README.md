@@ -1,5 +1,7 @@
 # NightMind
 
+![NightMind — a quiet 3am desk, a moon, a microphone](docs/nightmind-hero.png)
+
 Speak everything at 3am in one long take. Wake up to a clean morning brief.
 
 NightMind is a quiet [Tauri 2](https://v2.tauri.app/) desktop journal. You dump the night — rambling, half-asleep, sometimes luminous — and an editor writes the morning: the thread, the decisions, the few things worth doing, and the rest you can let go.
